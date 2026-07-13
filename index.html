@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>代肝老板管理系统</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🎮 代肝管理</h1>
+
+<button onclick="showAddBoss()">
++ 新增老板
+</button>
+
+</header>
+
+
+
+<main>
+
+
+<!-- 老板新增 -->
+
+<section id="addBox" class="panel hidden">
+
+
+<h2>新增老板</h2>
+
+
+<input id="bossName"
+placeholder="老板名称">
+
+
+<input id="packageName"
+placeholder="套餐名称">
+
+
+<label>
+主题颜色
+</label>
+
+
+<input 
+type="color"
+id="bossColor"
+value="#9b59ff">
+
+
+
+<label>
+服务开始日期
+</label>
+
+<input 
+type="date"
+id="startDate">
+
+
+
+<label>
+服务结束日期
+</label>
+
+
+<input
+type="date"
+id="endDate">
+
+
+
+<button onclick="createBoss()">
+保存老板
+</button>
+
+
+</section>
+
+
+
+
+
+<!-- 老板列表 -->
+
+
+<section class="panel">
+
+
+<h2>老板账号</h2>
+
+
+<div id="bossList">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- 老板详情 -->
+
+
+<section 
+id="bossDetail"
+class="panel hidden">
+
+
+
+<h2 id="detailTitle">
+老板详情
+</h2>
+
+
+
+
+<h3>
+📅 服务日历
+</h3>
+
+
+
+<div id="calendar">
+
+
+</div>
+
+
+
+
+
+<h3>
+📋 每日汇报检查
+</h3>
+
+
+<div class="compareBox">
+
+
+<textarea 
+id="yesterday"
+placeholder="粘贴昨天每日汇报">
+</textarea>
+
+
+
+<textarea 
+id="today"
+placeholder="粘贴今天每日汇报">
+</textarea>
+
+
+
+<button onclick="compareReport()">
+检查差异
+</button>
+
+
+
+<div id="compareResult">
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<h3>
+✅ 打卡
+</h3>
+
+
+<div id="checkList">
+
+
+</div>
+
+
+
+<button onclick="addCheck()">
+新增打卡项目
+</button>
+
+
+
+
+
+
+
+
+<h3>
+🎯 活动日历
+</h3>
+
+
+
+<button onclick="addActivity()">
+新增活动
+</button>
+
+
+
+<div id="activityList">
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
