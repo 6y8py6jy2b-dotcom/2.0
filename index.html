@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>代肝老板管理</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>🎮 代肝管理</h1>
+<button onclick="addBoss()">+ 添加老板</button>
+</header>
+
+
+<div class="container">
+
+
+<!-- 老板列表 -->
+
+<section class="card">
+
+<h2>老板账号</h2>
+
+<div id="bossList">
+
+<div class="boss purple">
+
+<h3>ㅋㅋの每日汇报</h3>
+
+<p>
+套餐：
+闪暖亲妈
+</p>
+
+<p>
+服务：
+7.3 - 8.2
+</p>
+
+<div class="paybar">
+
+<span>
+████████████████
+</span>
+
+</div>
+
+<p>
+剩余：
+21天
+</p>
+
+<button onclick="openBoss()">
+进入
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- 日历 -->
+
+<section class="card">
+
+<h2>📅 服务日历</h2>
+
+
+<div class="calendar">
+
+
+<div>
+7/29
+</div>
+
+<div class="line purple-bg">
+████████
+</div>
+
+
+<div>
+7/30
+</div>
+
+<div class="line purple-bg">
+████████
+</div>
+
+
+
+<div>
+7/31
+</div>
+
+<div class="line purple-bg">
+████████
+</div>
+
+
+</div>
+
+
+<button onclick="addActivity()">
+新增活动
+</button>
+
+
+<div id="activity">
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- 汇报 -->
+
+<section class="card">
+
+<h2>
+📋 每日汇报对比
+</h2>
+
+
+<textarea id="report1"
+placeholder="粘贴昨天汇报">
+</textarea>
+
+
+<textarea id="report2"
+placeholder="粘贴今天汇报">
+</textarea>
+
+
+
+<button onclick="compare()">
+开始检查
+</button>
+
+
+
+<div id="result">
+
+等待检查
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- 打卡 -->
+
+<section class="card">
+
+
+<h2>
+✅ 打卡
+</h2>
+
+
+<h3>
+每日打卡
+</h3>
+
+
+<div id="daily">
+
+<label>
+<input type="checkbox">
+登录
+</label>
+
+
+<label>
+<input type="checkbox">
+领取邮箱
+</label>
+
+
+<label>
+<input type="checkbox">
+每日单体
+</label>
+
+
+</div>
+
+
+
+<h3>
+每周打卡
+</h3>
+
+
+<label>
+<input type="checkbox">
+周兑换券
+</label>
+
+
+<label>
+<input type="checkbox">
+魔方
+</label>
+
+
+</section>
+
+
+
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
