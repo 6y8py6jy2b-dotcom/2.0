@@ -1,0 +1,341 @@
+*{
+    box-sizing:border-box;
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "PingFang SC",
+    sans-serif;
+}
+
+
+body{
+    margin:0;
+    background:#f2f2f7;
+    color:#222;
+}
+
+
+
+header{
+
+    position:sticky;
+    top:0;
+
+    z-index:10;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 20px;
+
+    background:white;
+
+    box-shadow:
+    0 2px 10px rgba(0,0,0,.08);
+
+}
+
+
+
+button{
+
+    border:0;
+
+    background:#007aff;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:14px;
+
+}
+
+
+
+main{
+
+    padding:15px;
+
+}
+
+
+
+.panel{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.06);
+
+}
+
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:8px 0;
+
+    border-radius:14px;
+
+    border:1px solid #ddd;
+
+    font-size:15px;
+
+}
+
+
+
+textarea{
+
+    height:150px;
+
+}
+
+
+
+
+
+/* 老板卡 */
+
+
+.boss-card{
+
+    padding:15px;
+
+    border-radius:18px;
+
+    margin-bottom:12px;
+
+    color:#222;
+
+}
+
+
+
+.boss-title{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+
+.color-bar{
+
+    height:8px;
+
+    border-radius:10px;
+
+    margin:12px 0;
+
+}
+
+
+
+
+
+
+/* 日历 */
+
+
+.calendar-month{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+
+.calendar-day{
+
+    display:grid;
+
+    grid-template-columns:
+    45px 1fr;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+
+.day-number{
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+
+
+.pay-line{
+
+    height:20px;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-size:11px;
+
+    padding-left:10px;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+
+/* 汇报 */
+
+
+.compare-result{
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:#fafafa;
+
+    line-height:1.8;
+
+}
+
+
+
+.warning{
+
+    color:#ff3b30;
+
+}
+
+
+
+.success{
+
+    color:#34c759;
+
+}
+
+
+
+
+
+/* 打卡 */
+
+
+.check-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px;
+
+    background:#f8f8fa;
+
+    border-radius:14px;
+
+    margin:8px 0;
+
+}
+
+
+
+.progress{
+
+    height:12px;
+
+    background:#eee;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress-inner{
+
+    height:100%;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+/* 活动 */
+
+
+.activity-card{
+
+    padding:12px;
+
+    border-radius:14px;
+
+    background:#fff5db;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+    h1{
+
+        font-size:20px;
+
+    }
+
+
+    .panel{
+
+        border-radius:18px;
+
+    }
+
+}
